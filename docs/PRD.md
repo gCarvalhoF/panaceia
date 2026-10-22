@@ -1,4 +1,4 @@
-# PRD - Dashboard Interativo de Acesso a Saude Publica em Salvador
+# PRD - Panaceia: Dashboard de Acesso a Saude Publica em Salvador
 
 ## 1. Visao Geral
 
@@ -582,6 +582,12 @@ SEMPRE USANDO TESTES PROGRAMÁTICOS
 - [x] Corrigidos 12 erros de TypeScript que impediam `npm run build`; `typecheck` adicionado ao CI
 - [x] LXC `panaceia.homelab` (VMID 108, 192.168.68.210) + role Ansible `panaceia` + tunel Cloudflare em `panaceia.gabrielcf.com` (repositorio `homelab-iac`)
 - [x] Primeiro boot cria os bancos e importa CNES/IBGE a partir de `aux-data` copiado para o LXC; sem backups (dados reproduziveis)
+
+### Fase 9 - Renomeacao para Panaceia
+- [x] Modulo Rails `Panaceia`; bancos `panaceia_*`, usuario `panaceia` e variavel `PANACEIA_DATABASE_PASSWORD` em producao
+- [x] Compose com `name: panaceia` (containers `panaceia-*-1` independentes do nome da pasta); pacote npm `panaceia`
+- [x] Titulo da aba e header do dashboard passam a exibir "Panaceia" com o subtitulo "Acesso a saude em Salvador"
+- [x] Repositorio GitHub renomeado para `gCarvalhoF/panaceia`; role `panaceia` do `homelab-iac` atualizada e banco de producao recriado/reimportado
 
 ---
 

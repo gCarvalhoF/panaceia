@@ -64,12 +64,13 @@ describe("DashboardPage", () => {
     vi.restoreAllMocks();
   });
 
-  it("renderiza o título do dashboard", async () => {
+  it("renderiza o nome do projeto (Panaceia) e o subtítulo no header", async () => {
     mockFetchByUrl();
 
     render(<DashboardPage />);
 
-    expect(screen.getByText("Saúde em Salvador")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "Panaceia" })).toBeInTheDocument();
+    expect(screen.getByText("Acesso à saúde em Salvador")).toBeInTheDocument();
   });
 
   it("renderiza o ícone do site (bandeira de Salvador) no header", async () => {

@@ -1,6 +1,6 @@
-BACKEND_CONTAINER = dados_acesso_saude_salvador-web-1
-DATABASE_CONTAINER = dados_acesso_saude_salvador-db-1
-REDIS_CONTAINER = dados_acesso_saude_salvador-redis-1
+BACKEND_CONTAINER = panaceia-web-1
+DATABASE_CONTAINER = panaceia-db-1
+REDIS_CONTAINER = panaceia-redis-1
 
 bash:
 	docker exec -it $(BACKEND_CONTAINER) bash

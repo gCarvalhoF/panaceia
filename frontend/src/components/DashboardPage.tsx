@@ -150,8 +150,8 @@ export default function DashboardPage() {
             className="w-8 h-8 object-contain flex-shrink-0"
           />
           <div>
-            <h1 className="text-lg font-bold text-gray-900">Saúde em Salvador</h1>
-            <p className="text-xs text-gray-500">Distribuição de equipamentos e estabelecimentos de saúde</p>
+            <h1 className="text-lg font-bold text-gray-900">Panaceia</h1>
+            <p className="text-xs text-gray-500">Acesso à saúde em Salvador</p>
           </div>
         </div>
 

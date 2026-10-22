@@ -1,6 +1,6 @@
-# Dashboard Interativo de Acesso à Saúde em Salvador
+# Panaceia — Dashboard de Acesso à Saúde em Salvador
 
-Dashboard com mapa interativo para visualização e análise da distribuição de equipamentos, estabelecimentos e serviços de saúde pública em Salvador, Bahia. O sistema cruza dados do CNES (Cadastro Nacional de Estabelecimentos de Saúde), Censo IBGE e GeoJSON de bairros para oferecer uma visão espacial do acesso à saúde no município.
+**Panaceia** é um dashboard com mapa interativo para visualização e análise da distribuição de equipamentos, estabelecimentos e serviços de saúde pública em Salvador, Bahia. O sistema cruza dados do CNES (Cadastro Nacional de Estabelecimentos de Saúde), Censo IBGE e GeoJSON de bairros para oferecer uma visão espacial do acesso à saúde no município.
 
 ---
 
@@ -378,7 +378,7 @@ Em produção o `Dockerfile` gera uma imagem única: o React é compilado em um 
 | `SECRET_KEY_BASE` | Obrigatória (não há `master.key`) |
 | `RAILS_HOSTS` | Hosts permitidos, separados por vírgula (vazio = qualquer host) |
 | `POSTGRES_HOST` / `POSTGRES_PORT` | Endereço do PostGIS |
-| `DADOS_ACESSO_SAUDE_SALVADOR_DATABASE_PASSWORD` | Senha do usuário `dados_acesso_saude_salvador` |
+| `PANACEIA_DATABASE_PASSWORD` | Senha do usuário `panaceia` |
 
 ---
 
@@ -393,6 +393,7 @@ Em produção o `Dockerfile` gera uma imagem única: o React é compilado em um 
 - [docs/phase6-implementation.md](docs/phase6-implementation.md) — IBGE como fonte única: schema migration, NeighborhoodImporter rewrite, IbgeCensusImporter
 - [docs/phase7-implementation.md](docs/phase7-implementation.md) — UI centrada no mapa: painéis flutuantes sobre o mapa em tela cheia
 - [docs/phase8-deployment.md](docs/phase8-deployment.md) — Deploy de produção no homelab: imagem única (API + SPA), host authorization, LXC via homelab-iac, importação no primeiro boot
+- [docs/phase9-rename.md](docs/phase9-rename.md) — Renomeação do projeto para **Panaceia**: módulo Rails, bancos, pacotes, repositório GitHub e cutover de produção
 
 ---
 
