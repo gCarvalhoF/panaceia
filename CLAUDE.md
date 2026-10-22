@@ -15,7 +15,7 @@ When asked to implement any feature, you'll first say: "Let me research the code
 ---
 
 
-# Dashboard Interativo de Acesso à Saúde em Salvador
+# Panaceia — Dashboard de Acesso à Saúde em Salvador
 
 Geospatial health access dashboard built with Rails 8 + React 18 + PostGIS. Visualizes CNES health facility data overlaid on Salvador neighborhood boundaries with interactive maps and charts.
 
@@ -143,3 +143,5 @@ All jobs run via Docker Compose for parity with local development.
 - `docs/phase1-implementation.md` — Backend architecture decisions
 - `docs/phase2-implementation.md` — Frontend architecture decisions
 - `docs/phase3-implementation.md` — Charts/metrics implementation
+- `docs/phase8-deployment.md` — Homelab production deploy
+- `docs/phase9-rename.md` — Rename to Panaceia (module, DBs, repo, prod cutover)

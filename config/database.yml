@@ -24,13 +24,13 @@ default: &default
 
 development:
   <<: *default
-  database: dados_acesso_saude_salvador_development
+  database: panaceia_development
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: dados_acesso_saude_salvador
+  #username: panaceia
 
   # The password associated with the PostgreSQL role (username).
   #password:
@@ -58,7 +58,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: dados_acesso_saude_salvador_test
+  database: panaceia_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -83,18 +83,18 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: dados_acesso_saude_salvador_production
-    username: dados_acesso_saude_salvador
-    password: <%= ENV["DADOS_ACESSO_SAUDE_SALVADOR_DATABASE_PASSWORD"] %>
+    database: panaceia_production
+    username: panaceia
+    password: <%= ENV["PANACEIA_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
-    database: dados_acesso_saude_salvador_production_cache
+    database: panaceia_production_cache
     migrations_paths: db/cache_migrate
   queue:
     <<: *primary_production
-    database: dados_acesso_saude_salvador_production_queue
+    database: panaceia_production_queue
     migrations_paths: db/queue_migrate
   cable:
     <<: *primary_production
-    database: dados_acesso_saude_salvador_production_cable
+    database: panaceia_production_cable
     migrations_paths: db/cable_migrate
